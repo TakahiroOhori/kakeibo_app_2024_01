@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import japanese_matplotlib
 import seaborn as sns
 import datetime
 
@@ -81,7 +82,7 @@ with st.container(border=True):
 # matplotlibの日本語表示の設定
 #  補足：conda環境ではjapanize_matplotlibがインストールできないので代替手段として
 #        matplotlib.pyplotのフォントパラメータの変更を行う
-plt.rcParams['font.family'] = "MS Gothic"
+# plt.rcParams['font.family'] = "MS Gothic"
 
 # データフレームの分類カラムの要素をリスト化
 column_list = ["年&月", "発生日", "収入or支出", "分類", "金額", "登録日"]
